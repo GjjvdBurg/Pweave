@@ -287,7 +287,7 @@ class PwebPandoctoTexFormatter(PwebTexPygmentsFormatter):
             chunk = self.parsetitle(chunk)
         try:
             pandoc = Popen(
-                ["pandoc", "-R", "-t", "latex", "-f", "markdown"],
+                ["pandoc", "-t", "latex+raw_tex", "-f", "markdown"],
                 stdin=PIPE,
                 stdout=PIPE,
             )
