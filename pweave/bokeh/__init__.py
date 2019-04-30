@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from IPython.display import display_html, display_markdown
 
 try:

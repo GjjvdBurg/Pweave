@@ -1,11 +1,14 @@
+# -*- coding: utf-8 -*-
+
 # Pweave readers
-import re
 import copy
-import json
 import io
-from subprocess import Popen, PIPE
+import json
 import os
-from urllib import request, parse
+import re
+
+from subprocess import Popen, PIPE
+from urllib import request
 
 
 def read_file_or_url(source):

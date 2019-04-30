@@ -1,6 +1,8 @@
-from .base import PwebFormatter
+# -*- coding: utf-8 -*-
+
 from nbconvert import filters
 
+from .base import PwebFormatter
 
 class PwebTexFormatter(PwebFormatter):
     def __init__(self, *args, **kwargs):

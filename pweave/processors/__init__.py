@@ -1,5 +1,6 @@
-from .jupyter import JupyterProcessor, IPythonProcessor
+# -*- coding: utf-8 -*-
 
+from .jupyter import JupyterProcessor, IPythonProcessor
 
 class PwebProcessors(object):
     """Lists available input formats"""

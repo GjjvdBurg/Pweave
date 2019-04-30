@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 css = u"""
 @import url("https://fonts.googleapis.com/css?family=News+Cycle:400,700");
 /*!

@@ -1,11 +1,14 @@
+# -*- coding: utf-8 -*-
+
 # Processors that execute code from code chunks
-import sys
-import re
-import os
-import io
 import copy
-from ..config import *
+import io
+import os
 import pickle
+import re
+import sys
+
+from ..config import rcParams
 
 
 class PwebProcessorBase(object):

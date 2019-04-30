@@ -1,13 +1,15 @@
+# -*- coding: utf-8 -*-
+
+import base64
+import html
+import os
+import sys
+
+from nbconvert import filters
+from subprocess import Popen, PIPE
+
 from .base import PwebFormatter
 from .tex import PwebTexPygmentsFormatter
-from subprocess import Popen, PIPE
-import base64
-import sys
-import os
-import io
-import html
-from nbconvert import filters
-
 
 class PwebHTMLFormatter(PwebFormatter):
     def preformat_chunk(self, chunk):

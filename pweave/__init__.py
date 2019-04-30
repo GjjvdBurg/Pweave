@@ -1,14 +1,15 @@
+# -*- coding: utf-8 -*-
+
 # Python module Pweave
 # Matti Pastell 2010-2016
 # http://mpastell.com/pweave
 
+import sys
 
 from . import readers
-from .pweb import *
-from .formatters import *
-from .readers import *
-from .processors import *
-from .config import *
+from .pweb import Pweb
+from .formatters import PwebFormats
+from .config import rcParams
 
 
 __version__ = "0.30.3"
@@ -57,7 +58,8 @@ def weave(
             "figformat option is not implemented for Pweave >= 0.3"
         )
 
-    assert file != "" is not None, "No input specified"
+    if file is None or file == "":
+        raise ValueError("No input specified")
 
     doc = Pweb(
         file,

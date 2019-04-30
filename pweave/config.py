@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 rcParams = {
     "figdir": "figures",
     "usematplotlib": True,

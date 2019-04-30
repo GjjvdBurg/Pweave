@@ -1,17 +1,17 @@
 # -*- coding: utf-8 -*-
 
-from jupyter_client.manager import start_new_kernel
-from jupyter_client import KernelManager
-from nbformat.v4 import output_from_msg
 import os
 
-from .. import config
-from .base import PwebProcessorBase
-from . import subsnippets
+from queue import Empty
+
 from IPython.core import inputsplitter
 from ipykernel.inprocess import InProcessKernelManager
+from jupyter_client import KernelManager
+from nbformat.v4 import output_from_msg
 
-from queue import Empty
+from .. import config
+from . import subsnippets
+from .base import PwebProcessorBase
 
 
 class JupyterProcessor(PwebProcessorBase):

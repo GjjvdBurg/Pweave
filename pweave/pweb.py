@@ -1,16 +1,17 @@
-import sys
-import os
-import re
+# -*- coding: utf-8 -*-
+
 import copy
 import io
+import os
+import sys
 
-from .readers import PwebReaders
-from .formatters import PwebFormats
-from .processors import PwebProcessors
 from jupyter_client import kernelspec
-
-from .mimetypes import MimeTypes
 from urllib import parse
+
+from .formatters import PwebFormats
+from .mimetypes import MimeTypes
+from .processors import PwebProcessors
+from .readers import PwebReaders
 
 
 class Pweb(object):

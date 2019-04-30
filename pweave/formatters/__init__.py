@@ -1,3 +1,7 @@
+# -*- coding: utf-8 -*-
+
+import os
+
 from .tex import (
     PwebTexFormatter,
     PwebMintedFormatter,
@@ -17,7 +21,6 @@ from .publish import (
     PwebHTMLFormatter,
 )
 from .jupyter_notebook import PwebNotebookFormatter
-import os
 
 
 class PwebFormats(object):

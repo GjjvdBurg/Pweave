@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 css = u"""
 /*!
  * bootswatch v3.3.6

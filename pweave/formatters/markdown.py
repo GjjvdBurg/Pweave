@@ -1,5 +1,8 @@
-from .base import PwebFormatter
+# -*- coding: utf-8 -*-
+
 import sys
+
+from .base import PwebFormatter
 
 
 class PwebPandocFormatter(PwebFormatter):

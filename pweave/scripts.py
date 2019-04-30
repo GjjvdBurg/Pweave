@@ -1,7 +1,9 @@
+# -*- coding: utf-8 -*-
+
 import sys
-from optparse import OptionParser
 import pweave
 
+from optparse import OptionParser
 
 def weave():
     if len(sys.argv) == 1:

@@ -1,7 +1,10 @@
-import textwrap
-import os
+# -*- coding: utf-8 -*-
+
 import base64
 import copy
+import os
+import textwrap
+
 from nbconvert import filters
 
 # Pweave output formatters

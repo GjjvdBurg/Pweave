@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 # Code snippets that are executed by subprocess writer
 
 init_matplotlib = """
